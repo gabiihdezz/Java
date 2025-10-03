@@ -1,0 +1,60 @@
+package refugio;
+
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		String nombre=null;
+		int edad=0;
+		Animal a = new Animal (nombre, edad);
+		int num =0 ; 
+		System.out.println("---MENÚ---");
+		do {
+			System.out.println("1- Añadir animal");
+			System.out.println("2- Mostrar Datos");
+			System.out.println("0- Salir");
+			num=sc.nextInt();
+			switch(num) {
+			case 1:
+				anadir();
+				break;
+			case 2:
+				mostrar();
+				break;
+			case 0:
+				System.out.print("FIN");
+			break;
+			default:
+				System.out.println("Incorrecto- Introduce un número del menú");
+			}
+			
+		}while(num!=0);
+		
+		
+	}
+
+	private static void mostrar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void anadir() {
+		Scanner sc = new Scanner (System.in);
+		int num =0 ; 
+		System.out.println("1- Para Perro \n2- Para Gatuno");
+		num=sc.nextInt();
+		if(num==1){
+			System.out.println("Has escogido Perro");
+			
+		}
+		else if (num==2) {
+			System.out.println("Has escogido Gato");
+		}
+		else {
+			System.out.println("O perro 1 o gato 2");
+		}
+	}
+
+}

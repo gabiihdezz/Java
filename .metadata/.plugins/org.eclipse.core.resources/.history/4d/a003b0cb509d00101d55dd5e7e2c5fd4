@@ -1,0 +1,7 @@
+package Ejercicios_Ficheros1;
+
+public class Ej807 {
+
+	private int numeros;
+	
+}

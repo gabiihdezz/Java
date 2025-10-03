@@ -1,0 +1,16 @@
+package refugio;
+
+public class Gato extends Animal{
+
+	public Gato(String nombre, int edad) {
+		super(nombre, edad);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public int longitudBigotes;
+	public void maullar() {
+		System.out.print("Wheres your head at?");
+	}
+
+
+}

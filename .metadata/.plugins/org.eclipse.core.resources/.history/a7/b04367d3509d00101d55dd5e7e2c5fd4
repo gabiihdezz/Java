@@ -1,0 +1,15 @@
+package Ejercicios_Ficheros1;
+
+public class Ej807 {
+
+	private int numeros;
+
+	public int getNumeros() {
+		return numeros;
+	}
+
+	public void setNumeros(int numeros) {
+		this.numeros = numeros;
+	}
+	
+}

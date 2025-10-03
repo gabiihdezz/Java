@@ -1,0 +1,36 @@
+package FicherosTexto;
+
+import java.io.*;
+
+public class EjemploObjetos {
+
+	public static void main(String[] args) {
+		escribirObjeto();
+		leerObjeto();
+	}
+	
+	private static void escribirObjeto() throws IOException {
+		String [] nombre = {"Sergio", "Pedro", "Juan", "Otero"};
+		int [] edades= {23,33,42,13};
+		
+		File f = new File ("ficheroObjetos.dat");
+		
+		FileOutputStream fo;
+		
+		fo = new FileOutputStream(f);
+		
+		ObjectOutputStream ooS = new ObjectOutputStream(fo);
+		
+		for(int i = 0; i<4; i++) {
+			Persona p = new Persona (nombre[i], edades[i]);
+			ooS.writeObject(p);
+		}
+		
+		
+	}
+
+	private static void leerObjeto() {
+		
+	}
+
+}

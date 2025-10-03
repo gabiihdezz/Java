@@ -1,0 +1,11 @@
+package refugio;
+
+public class Animal {
+
+	public String nombre;
+	public int edad;
+	public void mostrarDatos() {
+		
+	}
+	
+}

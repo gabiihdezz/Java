@@ -1,0 +1,7 @@
+package refugio;
+
+public class Perro extends Animal {
+
+	
+	
+}
