@@ -1,8 +1,0 @@
-package refugio;
-
-public class Gato extends Animal{
-	
-	
-	
-
-}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<empresa>
+    <departamento nombre="Recursos Humanos">
+        <empleado>
+            <nombre>Ana Gómez</nombre>
+            <id>1</id>
+            <puesto>Gerente</puesto>
+            <salario>50000.0</salario>
+        </empleado>
+        <empleado>
+            <nombre>Pedro Martínez</nombre>
+            <id>2</id>
+            <puesto>Especialista</puesto>
+            <salario>40000.0</salario>
+        </empleado>
+    </departamento>
+    <departamento nombre="Tecnología">
+        <empleado>
+            <nombre>Laura Fernández</nombre>
+            <id>3</id>
+            <puesto>Desarrollador</puesto>
+            <salario>45000.0</salario>
+        </empleado>
+        <empleado>
+            <nombre>Carlos García</nombre>
+            <id>4</id>
+            <puesto>Analista</puesto>
+            <salario>42000.0</salario>
+        </empleado>
+    </departamento>
+</empresa>
