@@ -1165,3 +1165,389 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2025-10-20 18:15:41.318
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2025-10-21 17:39:19.807 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-10-21 17:39:49.254
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-10-21 17:41:08.116
+!MESSAGE Logback config file: D:\GabrielHC\Java\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-10-21 17:41:20.097
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'Z:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-10-21 17:51:19.421
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2025-10-21 17:51:19.426
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-10-21 19:25:21.975
+!MESSAGE Z:\.config\jgit\config: No se ha encontrado la ruta de acceso de la red
+!STACK 0
+java.nio.file.FileSystemException: Z:\.config\jgit\config: No se ha encontrado la ruta de acceso de la red
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:197)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1854)
+	at org.eclipse.jgit.util.FileUtils.fileAttributes(FileUtils.java:809)
+	at org.eclipse.jgit.util.FS.fileAttributes(FS.java:1227)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.getFileAttributes(FileSnapshot.java:552)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified(FileSnapshot.java:285)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.isOutdated(FileBasedConfig.java:246)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:542)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:539)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:539)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:539)
+	at org.eclipse.jgit.util.SystemReader.getUserConfig(SystemReader.java:410)
+	at org.eclipse.jgit.internal.storage.file.FileRepository.getConfig(FileRepository.java:381)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:59)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:1)
+	at org.eclipse.egit.core.RepositoryHandle.getConfig(RepositoryHandle.java:222)
+	at org.eclipse.jgit.treewalk.FileTreeIterator.<init>(FileTreeIterator.java:71)
+	at org.eclipse.egit.core.IteratorService.createInitialIterator(IteratorService.java:43)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.lambda$5(IndexDiffCacheEntry.java:573)
+	at org.eclipse.egit.core.UnitOfWork.run(UnitOfWork.java:115)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:571)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$3.updateIndexDiff(IndexDiffCacheEntry.java:503)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-10-21 19:25:21.979
+!MESSAGE Z:\.config\jgit\config: No se ha encontrado la ruta de acceso de la red
+!STACK 0
+java.nio.file.FileSystemException: Z:\.config\jgit\config: No se ha encontrado la ruta de acceso de la red
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:197)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1854)
+	at org.eclipse.jgit.util.FileUtils.fileAttributes(FileUtils.java:809)
+	at org.eclipse.jgit.util.FS.fileAttributes(FS.java:1227)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.getFileAttributes(FileSnapshot.java:552)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.<init>(FileSnapshot.java:214)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.saveNoConfig(FileSnapshot.java:123)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.load(FileBasedConfig.java:147)
+	at org.eclipse.jgit.util.FileUtils.readWithRetries(FileUtils.java:733)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.load(FileBasedConfig.java:128)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:544)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:539)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:539)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:539)
+	at org.eclipse.jgit.util.SystemReader.getUserConfig(SystemReader.java:410)
+	at org.eclipse.jgit.internal.storage.file.FileRepository.getConfig(FileRepository.java:381)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:59)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:1)
+	at org.eclipse.egit.core.RepositoryHandle.getConfig(RepositoryHandle.java:222)
+	at org.eclipse.jgit.treewalk.FileTreeIterator.<init>(FileTreeIterator.java:71)
+	at org.eclipse.egit.core.IteratorService.createInitialIterator(IteratorService.java:43)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.lambda$5(IndexDiffCacheEntry.java:573)
+	at org.eclipse.egit.core.UnitOfWork.run(UnitOfWork.java:115)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:571)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$3.updateIndexDiff(IndexDiffCacheEntry.java:503)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-10-21 19:25:21.984
+!MESSAGE Z:\.gitconfig: No se ha encontrado la ruta de acceso de la red
+!STACK 0
+java.nio.file.FileSystemException: Z:\.gitconfig: No se ha encontrado la ruta de acceso de la red
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:197)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1854)
+	at org.eclipse.jgit.util.FileUtils.fileAttributes(FileUtils.java:809)
+	at org.eclipse.jgit.util.FS.fileAttributes(FS.java:1227)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.getFileAttributes(FileSnapshot.java:552)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified(FileSnapshot.java:285)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.isOutdated(FileBasedConfig.java:246)
+	at org.eclipse.jgit.storage.file.UserConfigFile.isOutdated(UserConfigFile.java:95)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:542)
+	at org.eclipse.jgit.util.SystemReader.getUserConfig(SystemReader.java:410)
+	at org.eclipse.jgit.internal.storage.file.FileRepository.getConfig(FileRepository.java:381)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:59)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:1)
+	at org.eclipse.egit.core.RepositoryHandle.getConfig(RepositoryHandle.java:222)
+	at org.eclipse.jgit.treewalk.FileTreeIterator.<init>(FileTreeIterator.java:71)
+	at org.eclipse.egit.core.IteratorService.createInitialIterator(IteratorService.java:43)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.lambda$5(IndexDiffCacheEntry.java:573)
+	at org.eclipse.egit.core.UnitOfWork.run(UnitOfWork.java:115)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:571)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$3.updateIndexDiff(IndexDiffCacheEntry.java:503)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-10-21 19:25:21.985
+!MESSAGE Z:\.gitconfig: No se ha encontrado la ruta de acceso de la red
+!STACK 0
+java.nio.file.FileSystemException: Z:\.gitconfig: No se ha encontrado la ruta de acceso de la red
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:197)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1854)
+	at org.eclipse.jgit.util.FileUtils.fileAttributes(FileUtils.java:809)
+	at org.eclipse.jgit.util.FS.fileAttributes(FS.java:1227)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.getFileAttributes(FileSnapshot.java:552)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified(FileSnapshot.java:285)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.isOutdated(FileBasedConfig.java:246)
+	at org.eclipse.jgit.storage.file.UserConfigFile.load(UserConfigFile.java:100)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:544)
+	at org.eclipse.jgit.util.SystemReader.getUserConfig(SystemReader.java:410)
+	at org.eclipse.jgit.internal.storage.file.FileRepository.getConfig(FileRepository.java:381)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:59)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:1)
+	at org.eclipse.egit.core.RepositoryHandle.getConfig(RepositoryHandle.java:222)
+	at org.eclipse.jgit.treewalk.FileTreeIterator.<init>(FileTreeIterator.java:71)
+	at org.eclipse.egit.core.IteratorService.createInitialIterator(IteratorService.java:43)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.lambda$5(IndexDiffCacheEntry.java:573)
+	at org.eclipse.egit.core.UnitOfWork.run(UnitOfWork.java:115)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:571)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$3.updateIndexDiff(IndexDiffCacheEntry.java:503)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-10-21 19:25:21.987
+!MESSAGE Z:\.gitconfig: No se ha encontrado la ruta de acceso de la red
+!STACK 0
+java.nio.file.FileSystemException: Z:\.gitconfig: No se ha encontrado la ruta de acceso de la red
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:197)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1854)
+	at org.eclipse.jgit.util.FileUtils.fileAttributes(FileUtils.java:809)
+	at org.eclipse.jgit.util.FS.fileAttributes(FS.java:1227)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.getFileAttributes(FileSnapshot.java:552)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.<init>(FileSnapshot.java:214)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.saveNoConfig(FileSnapshot.java:123)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.load(FileBasedConfig.java:147)
+	at org.eclipse.jgit.util.FileUtils.readWithRetries(FileUtils.java:733)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.load(FileBasedConfig.java:128)
+	at org.eclipse.jgit.storage.file.UserConfigFile.load(UserConfigFile.java:101)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:544)
+	at org.eclipse.jgit.util.SystemReader.getUserConfig(SystemReader.java:410)
+	at org.eclipse.jgit.internal.storage.file.FileRepository.getConfig(FileRepository.java:381)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:59)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:1)
+	at org.eclipse.egit.core.RepositoryHandle.getConfig(RepositoryHandle.java:222)
+	at org.eclipse.jgit.treewalk.FileTreeIterator.<init>(FileTreeIterator.java:71)
+	at org.eclipse.egit.core.IteratorService.createInitialIterator(IteratorService.java:43)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.lambda$5(IndexDiffCacheEntry.java:573)
+	at org.eclipse.egit.core.UnitOfWork.run(UnitOfWork.java:115)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:571)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$3.updateIndexDiff(IndexDiffCacheEntry.java:503)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2025-10-21 20:06:36.181 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.8
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-10-21 20:06:37.974
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-10-21 20:07:08.822
+!MESSAGE Logback config file: D:\GabrielHC\Java\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-10-21 20:07:15.922
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'Z:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-10-21 20:14:37.411
+!MESSAGE Z:\.config\jgit\config: No se ha encontrado la ruta de acceso de la red
+!STACK 0
+java.nio.file.FileSystemException: Z:\.config\jgit\config: No se ha encontrado la ruta de acceso de la red
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:197)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1854)
+	at org.eclipse.jgit.util.FileUtils.fileAttributes(FileUtils.java:809)
+	at org.eclipse.jgit.util.FS.fileAttributes(FS.java:1227)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.getFileAttributes(FileSnapshot.java:552)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified(FileSnapshot.java:285)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.isOutdated(FileBasedConfig.java:246)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:542)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:539)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:539)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:539)
+	at org.eclipse.jgit.util.SystemReader.getUserConfig(SystemReader.java:410)
+	at org.eclipse.jgit.internal.storage.file.FileRepository.getConfig(FileRepository.java:381)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:59)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:1)
+	at org.eclipse.egit.core.RepositoryHandle.getConfig(RepositoryHandle.java:222)
+	at org.eclipse.jgit.treewalk.FileTreeIterator.<init>(FileTreeIterator.java:71)
+	at org.eclipse.egit.core.IteratorService.createInitialIterator(IteratorService.java:43)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.lambda$5(IndexDiffCacheEntry.java:573)
+	at org.eclipse.egit.core.UnitOfWork.run(UnitOfWork.java:115)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:571)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$3.updateIndexDiff(IndexDiffCacheEntry.java:503)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-10-21 20:14:37.414
+!MESSAGE Z:\.config\jgit\config: No se ha encontrado la ruta de acceso de la red
+!STACK 0
+java.nio.file.FileSystemException: Z:\.config\jgit\config: No se ha encontrado la ruta de acceso de la red
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:197)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1854)
+	at org.eclipse.jgit.util.FileUtils.fileAttributes(FileUtils.java:809)
+	at org.eclipse.jgit.util.FS.fileAttributes(FS.java:1227)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.getFileAttributes(FileSnapshot.java:552)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.<init>(FileSnapshot.java:214)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.saveNoConfig(FileSnapshot.java:123)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.load(FileBasedConfig.java:147)
+	at org.eclipse.jgit.util.FileUtils.readWithRetries(FileUtils.java:733)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.load(FileBasedConfig.java:128)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:544)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:539)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:539)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:539)
+	at org.eclipse.jgit.util.SystemReader.getUserConfig(SystemReader.java:410)
+	at org.eclipse.jgit.internal.storage.file.FileRepository.getConfig(FileRepository.java:381)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:59)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:1)
+	at org.eclipse.egit.core.RepositoryHandle.getConfig(RepositoryHandle.java:222)
+	at org.eclipse.jgit.treewalk.FileTreeIterator.<init>(FileTreeIterator.java:71)
+	at org.eclipse.egit.core.IteratorService.createInitialIterator(IteratorService.java:43)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.lambda$5(IndexDiffCacheEntry.java:573)
+	at org.eclipse.egit.core.UnitOfWork.run(UnitOfWork.java:115)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:571)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$3.updateIndexDiff(IndexDiffCacheEntry.java:503)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-10-21 20:14:37.419
+!MESSAGE Z:\.gitconfig: No se ha encontrado la ruta de acceso de la red
+!STACK 0
+java.nio.file.FileSystemException: Z:\.gitconfig: No se ha encontrado la ruta de acceso de la red
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:197)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1854)
+	at org.eclipse.jgit.util.FileUtils.fileAttributes(FileUtils.java:809)
+	at org.eclipse.jgit.util.FS.fileAttributes(FS.java:1227)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.getFileAttributes(FileSnapshot.java:552)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified(FileSnapshot.java:285)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.isOutdated(FileBasedConfig.java:246)
+	at org.eclipse.jgit.storage.file.UserConfigFile.isOutdated(UserConfigFile.java:95)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:542)
+	at org.eclipse.jgit.util.SystemReader.getUserConfig(SystemReader.java:410)
+	at org.eclipse.jgit.internal.storage.file.FileRepository.getConfig(FileRepository.java:381)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:59)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:1)
+	at org.eclipse.egit.core.RepositoryHandle.getConfig(RepositoryHandle.java:222)
+	at org.eclipse.jgit.treewalk.FileTreeIterator.<init>(FileTreeIterator.java:71)
+	at org.eclipse.egit.core.IteratorService.createInitialIterator(IteratorService.java:43)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.lambda$5(IndexDiffCacheEntry.java:573)
+	at org.eclipse.egit.core.UnitOfWork.run(UnitOfWork.java:115)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:571)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$3.updateIndexDiff(IndexDiffCacheEntry.java:503)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-10-21 20:14:37.420
+!MESSAGE Z:\.gitconfig: No se ha encontrado la ruta de acceso de la red
+!STACK 0
+java.nio.file.FileSystemException: Z:\.gitconfig: No se ha encontrado la ruta de acceso de la red
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:197)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1854)
+	at org.eclipse.jgit.util.FileUtils.fileAttributes(FileUtils.java:809)
+	at org.eclipse.jgit.util.FS.fileAttributes(FS.java:1227)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.getFileAttributes(FileSnapshot.java:552)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.isModified(FileSnapshot.java:285)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.isOutdated(FileBasedConfig.java:246)
+	at org.eclipse.jgit.storage.file.UserConfigFile.load(UserConfigFile.java:100)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:544)
+	at org.eclipse.jgit.util.SystemReader.getUserConfig(SystemReader.java:410)
+	at org.eclipse.jgit.internal.storage.file.FileRepository.getConfig(FileRepository.java:381)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:59)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:1)
+	at org.eclipse.egit.core.RepositoryHandle.getConfig(RepositoryHandle.java:222)
+	at org.eclipse.jgit.treewalk.FileTreeIterator.<init>(FileTreeIterator.java:71)
+	at org.eclipse.egit.core.IteratorService.createInitialIterator(IteratorService.java:43)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.lambda$5(IndexDiffCacheEntry.java:573)
+	at org.eclipse.egit.core.UnitOfWork.run(UnitOfWork.java:115)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:571)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$3.updateIndexDiff(IndexDiffCacheEntry.java:503)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-10-21 20:14:37.422
+!MESSAGE Z:\.gitconfig: No se ha encontrado la ruta de acceso de la red
+!STACK 0
+java.nio.file.FileSystemException: Z:\.gitconfig: No se ha encontrado la ruta de acceso de la red
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:197)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1854)
+	at org.eclipse.jgit.util.FileUtils.fileAttributes(FileUtils.java:809)
+	at org.eclipse.jgit.util.FS.fileAttributes(FS.java:1227)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.getFileAttributes(FileSnapshot.java:552)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.<init>(FileSnapshot.java:214)
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.saveNoConfig(FileSnapshot.java:123)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.load(FileBasedConfig.java:147)
+	at org.eclipse.jgit.util.FileUtils.readWithRetries(FileUtils.java:733)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.load(FileBasedConfig.java:128)
+	at org.eclipse.jgit.storage.file.UserConfigFile.load(UserConfigFile.java:101)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:544)
+	at org.eclipse.jgit.util.SystemReader.getUserConfig(SystemReader.java:410)
+	at org.eclipse.jgit.internal.storage.file.FileRepository.getConfig(FileRepository.java:381)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:59)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:1)
+	at org.eclipse.egit.core.RepositoryHandle.getConfig(RepositoryHandle.java:222)
+	at org.eclipse.jgit.treewalk.FileTreeIterator.<init>(FileTreeIterator.java:71)
+	at org.eclipse.egit.core.IteratorService.createInitialIterator(IteratorService.java:43)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.lambda$5(IndexDiffCacheEntry.java:573)
+	at org.eclipse.egit.core.UnitOfWork.run(UnitOfWork.java:115)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:571)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$3.updateIndexDiff(IndexDiffCacheEntry.java:503)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
