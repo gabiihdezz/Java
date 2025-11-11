@@ -2,6 +2,7 @@ package proyectoInicioHibernate.entidades;
 
 import javax.persistence.*;
 
+@Entity
 public class Profesor {
 	@Id
 	@Column(name="cod_profesor")
